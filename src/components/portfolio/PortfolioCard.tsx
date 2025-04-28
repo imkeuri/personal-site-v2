@@ -9,6 +9,8 @@ export interface PortfolioItem {
     imageUrl: string;
     shortDescription: string;
     tags: string[];
+    longDescription: string;
+    techStack: string[];
 }
 
 interface PortfolioCardProps {

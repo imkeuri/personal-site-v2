@@ -9,15 +9,13 @@ import Button from '../components/common/Button'; // For links
  // --- Placeholder Data ---
 // In a real app, fetch this from an API based on the slug
 // This is just for demonstration
-const allProjectsData: PortfolioItem[] = [
+const allProjectsData: PortfolioDetailItem[] = [
      { id: '1', title: 'Project Alpha', slug: 'project-alpha', imageUrl: 'https://via.placeholder.com/800x400/133c55/91e5f6?text=Project+Alpha+Detail', shortDescription: 'A revolutionary web application using React and Node.js. Built with performance in mind.', tags: ['React', 'Node.js', 'Tailwind CSS', 'Web App'], longDescription: 'Detailed description about the challenges, my role, the solution implemented for Project Alpha...', techStack: ['React 18', 'Node.js (Express)', 'PostgreSQL', 'Tailwind CSS', 'Vite'], liveUrl: '#', repoUrl: '#' },
      { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://via.placeholder.com/800x400/386FA4/FFFFFF?text=Service+Beta+Detail', shortDescription: 'Scalable microservices architecture for a cloud platform, focusing on resilience.', tags: ['TypeScript', 'AWS', 'Docker', 'API'], longDescription: 'Deep dive into the microservices architecture, AWS services used, and how we ensured scalability and resilience for Service Beta.', techStack: ['TypeScript', 'Node.js', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'Docker'], liveUrl: null, repoUrl: '#' },
     // Add detailed data for other projects
 ];
 // Extend PortfolioItem type or create a new one for detailed view
 interface PortfolioDetailItem extends PortfolioItem {
-    longDescription: string;
-    techStack: string[];
     liveUrl?: string | null;
     repoUrl?: string | null;
     // Add more fields like challenges, results, screenshots etc.
@@ -126,12 +124,12 @@ const PortfolioDetailPage: React.FC = () => {
                      {/* Links */}
                      <div className="flex space-x-4">
                         {project.liveUrl && (
-                            <Button href={project.liveUrl} variant="primary" target="_blank" rel="noopener noreferrer">
+                            <Button href={project.liveUrl} variant="primary"  rel="noopener noreferrer">
                                 Live Demo
                             </Button>
                         )}
                          {project.repoUrl && (
-                             <Button href={project.repoUrl} variant="secondary" target="_blank" rel="noopener noreferrer">
+                             <Button href={project.repoUrl} variant="secondary"  rel="noopener noreferrer">
                                  View Code {/* Or GitHub Repo */}
                              </Button>
                          )}

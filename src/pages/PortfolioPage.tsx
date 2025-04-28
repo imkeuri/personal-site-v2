@@ -6,10 +6,10 @@ import PortfolioCard, { PortfolioItem } from '../components/portfolio/PortfolioC
 
 // --- Placeholder Data ---
 const allProjectsData: PortfolioItem[] = [
-    { id: '1', title: 'Project Alpha', slug: 'project-alpha', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'A revolutionary web application using React and Node.js. Built with performance in mind.', tags: ['React', 'Node.js', 'Tailwind CSS', 'Web App'] },
-    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform, focusing on resilience.', tags: ['TypeScript', 'AWS', 'Docker', 'API'] },
-    { id: '3', title: 'Gamma Platform', slug: 'gamma-platform', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'An internal tool streamlining company workflows, built with React and Python.', tags: ['React', 'Python', 'Flask', 'Internal Tool'] },
-    { id: '4', title: 'Delta Mobile App', slug: 'delta-mobile-app', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Cross-platform mobile app for task management.', tags: ['React Native', 'Firebase', 'Mobile App', 'React'] }, // Added React tag here for example
+    { id: '1', title: 'Project Alpha', slug: 'project-alpha', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'A revolutionary web application using React and Node.js. Built with performance in mind.', tags: ['React', 'Node.js', 'Tailwind CSS', 'Web App'], longDescription: "", techStack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Vite'], },
+    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform, focusing on resilience.', tags: ['TypeScript', 'AWS', 'Docker', 'API'], longDescription: "", techStack: ['TypeScript', 'Node.js', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'Docker'], },
+    { id: '3', title: 'Gamma Platform', slug: 'gamma-platform', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'An internal tool streamlining company workflows, built with React and Python.', tags: ['React', 'Python', 'Flask', 'Internal Tool'], longDescription: "", techStack: ['React', 'Python', 'Flask', 'PostgreSQL'], },
+    { id: '4', title: 'Delta Mobile App', slug: 'delta-mobile-app', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Cross-platform mobile app for task management.', tags: ['React Native', 'Firebase', 'Mobile App', 'React'],  longDescription: "", techStack: ['React', 'Python', 'Flask', 'PostgreSQL']}, // Added React tag here for example
     // Add more projects
 ];
 // -----------------------

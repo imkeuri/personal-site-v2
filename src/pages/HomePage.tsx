@@ -7,9 +7,9 @@ import imageBanner from '../assets/Subject.png'; // Adjust path/name if needed
 
 // Sample data
 const featuredProjects: PortfolioItem[] = [
-    { id: '1', title: 'Project Alpha', slug: 'project-alpha', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'A revolutionary web application using React and Node.js.', tags: ['React', 'Node.js', 'Tailwind CSS'] },
-    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform.', tags: ['TypeScript', 'AWS', 'Docker'] },
-    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform.', tags: ['TypeScript', 'AWS', 'Docker'] },
+    { id: '1', title: 'Project Alpha', slug: 'project-alpha', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'A revolutionary web application using React and Node.js.', tags: ['React', 'Node.js', 'Tailwind CSS'] , longDescription: "", techStack: ['React 18', 'Node.js (Express)', 'PostgreSQL', 'Tailwind CSS', 'Vite'], },
+    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform.', tags: ['TypeScript', 'AWS', 'Docker'] , longDescription: "", techStack: ['TypeScript', 'Node.js', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'Docker'],  },
+    { id: '2', title: 'Service Beta', slug: 'service-beta', imageUrl: 'https://image-placeholder.com/images/actual-size/640x480.png', shortDescription: 'Scalable microservices architecture for a cloud platform.', tags: ['TypeScript', 'AWS', 'Docker'] , longDescription: "", techStack: ['TypeScript', 'Node.js', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'Docker'],   },
 ];
 
 const HomePage: React.FC = () => {
